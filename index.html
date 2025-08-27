@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VijayKumar Yadav - Frontend Developer</title>
+    <meta name="description" content="VijayKumar Yadav - Passionate Frontend Developer specializing in React.js, JavaScript, and modern web technologies">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Exo+2:wght@300;400;500;600;700;800;900&family=Source+Code+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    
+   
+</head>
+
+<body>
+    <div class="animated-bg"></div>
+    <!-- Mobile Menu Toggle -->
+    <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Mobile Offcanvas Menu -->
+    <div class="offcanvas-overlay" onclick="toggleMobileMenu()"></div>
+    <div class="offcanvas-menu">
+        <nav class="offcanvas-nav">
+            <a href="#hero" class="offcanvas-nav-item active" data-section="hero">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="#about" class="offcanvas-nav-item" data-section="about">
+                <i class="fas fa-user"></i>
+                <span>About</span>
+            </a>
+            <a href="#skills" class="offcanvas-nav-item" data-section="skills">
+                <i class="fas fa-code"></i>
+                <span>Skills</span>
+            </a>
+            <a href="#portfolio" class="offcanvas-nav-item" data-section="portfolio">
+                <i class="fas fa-briefcase"></i>
+                <span>Portfolio</span>
+            </a>
+            <a href="#experience" class="offcanvas-nav-item" data-section="experience">
+                <i class="fas fa-clock"></i>
+                <span>Experience</span>
+            </a>
+            <a href="#contact" class="offcanvas-nav-item" data-section="contact">
+                <i class="fas fa-envelope"></i>
+                <span>Contact</span>
+            </a>
+        </nav>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <a href="#hero" class="nav-item active" data-section="hero">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="#about" class="nav-item" data-section="about">
+            <i class="fas fa-user"></i>
+            <span>About</span>
+        </a>
+        <a href="#skills" class="nav-item" data-section="skills">
+            <i class="fas fa-code"></i>
+            <span>Skills</span>
+        </a>
+        <a href="#portfolio" class="nav-item" data-section="portfolio">
+            <i class="fas fa-briefcase"></i>
+            <span>Portfolio</span>
+        </a>
+        <a href="#experience" class="nav-item" data-section="experience">
+            <i class="fas fa-clock"></i>
+            <span>Experience</span>
+        </a>
+        <a href="#contact" class="nav-item" data-section="contact">
+            <i class="fas fa-envelope"></i>
+            <span>Contact</span>
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="section active">
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">VijayKumar Yadav</h1>
+                <p class="hero-subtitle">
+                    Hello! I'm a passionate <span class="typing-text" id="typed-text"></span>
+                </p>
+                <p class="about-text">
+                    Crafting beautiful, responsive web experiences with modern technologies. 
+                    Specialized in React.js, JavaScript, and creating visually stunning user interfaces.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn-primary">View My Work</a>
+                    <a href="#contact" class="btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="floating-profile">
+                <div class="profile-image" >
+                    <img class="img-fluid" src="https://ik.imagekit.io/gku4adhog/115434-removebg-preview.png?updatedAt=1745475915562" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="grid grid-2">
+                <div class="about-card">
+                    <h3 style="font-size: 2rem; margin-bottom: 1.5rem; background: var(--accent-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Who Am I</h3>
+                    <p class="about-text">
+                        As a passionate Frontend Developer 🌐, I specialize in building responsive, user-centric web applications using React.js ⚛️, JavaScript 📜, Bootstrap 5 🎨, Tailwind CSS 🌈, CSS3 🎨, Sass 🕸️ and HTML5 🖥️.
+                    </p>
+                    <p class="about-text">
+                        I've created multiple animated websites using GSAP 🎨, Lenis 🌀, Sherry.js, and Locomotive Scroll 🚀 to deliver smooth, interactive, and visually engaging user experiences.
+                    </p>
+                    <p class="about-text">
+                        👏 I have hands-on experience creating websites from Figma designs 🎨, including E-commerce platforms 🛒, with a keen focus on design aesthetics 🎨 and performance optimization ⚙️.
+                    </p>
+                    <div class="hero-buttons" style="margin-top: 2rem; justify-content: flex-start;">
+                        <a href="#" class="btn-primary">Download Resume</a>
+                        <a href="#contact" class="btn-secondary">Hire Me</a>
+                    </div>
+                </div>
+                
+                <div class="about-card">
+                    <h3 style="font-size: 2rem; margin-bottom: 1.5rem; background: var(--accent-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">My Expertise</h3>
+                    <div class="grid" style="gap: 1rem;">
+                        <div style="padding: 1rem; background: rgba(79, 172, 254, 0.1); border-radius: 10px; border-left: 4px solid var(--text-accent);">
+                            <h4 style="color: var(--text-accent); margin-bottom: 0.5rem;">Frontend Development</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem;">React.js, JavaScript ES6+, HTML5, CSS3, Sass</p>
+                        </div>
+                        <div style="padding: 1rem; background: rgba(102, 126, 234, 0.1); border-radius: 10px; border-left: 4px solid #667eea;">
+                            <h4 style="color: #667eea; margin-bottom: 0.5rem;">UI/UX Design</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem;">Figma, Responsive Design, User Experience</p>
+                        </div>
+                        <div style="padding: 1rem; background: rgba(245, 87, 108, 0.1); border-radius: 10px; border-left: 4px solid #f5576c;">
+                            <h4 style="color: #f5576c; margin-bottom: 0.5rem;">Animations</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem;">GSAP, Locomotive Scroll, Lenis, Sherry.js</p>
+                        </div>
+                        <div style="padding: 1rem; background: rgba(118, 75, 162, 0.1); border-radius: 10px; border-left: 4px solid #764ba2;">
+                            <h4 style="color: #764ba2; margin-bottom: 0.5rem;">Tools & Workflow</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem;">GitHub, Namecheap, SSL Management</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="grid grid-4">
+                <div class="skill-card animate-on-scroll">
+                    <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                    <div class="skill-name">HTML5</div>
+                </div>
+                <div class="skill-card animate-on-scroll">
+                    <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                    <div class="skill-name">CSS3</div>
+                </div>
+                <div class="skill-card animate-on-scroll">
+                    <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+                    <div class="skill-name">JavaScript</div>
+                </div>
+                <div class="skill-card animate-on-scroll">
+                    <div class="skill-icon"><i class="fab fa-react"></i></div>
+                    <div class="skill-name">React.js</div>
+                </div>
+                <div class="skill-card animate-on-scroll">
+                    <div class="skill-icon"><i class="fab fa-bootstrap"></i></div>
+                    <div class="skill-name">Bootstrap</div>
+                </div>
+                <div class="skill-card animate-on-scroll">
+                    <div class="skill-icon"><i class="fas fa-wind"></i></div>
+                    <div class="skill-name">Tailwind</div>
+                </div>
+                <div class="skill-card animate-on-scroll">
+                    <div class="skill-icon"><i class="fab fa-sass"></i></div>
+                    <div class="skill-name">Sass</div>
+                </div>
+                <div class="skill-card animate-on-scroll">
+                    <div class="skill-icon"><i class="fas fa-magic"></i></div>
+                    <div class="skill-name">GSAP</div>
+                </div>
+                <div class="skill-card animate-on-scroll">
+                    <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                    <div class="skill-name">Express.js</div>
+                </div>
+                <div class="skill-card animate-on-scroll">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <div class="skill-name">MongoDB</div>
+                </div>
+                <div class="skill-card animate-on-scroll">
+                    <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                    <div class="skill-name">Git/GitHub</div>
+                </div>
+                <div class="skill-card animate-on-scroll">
+                    <div class="skill-icon"><i class="fas fa-rocket"></i></div>
+                    <div class="skill-name">Locomotive</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h2 class="section-title">My Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-card animate-on-scroll">
+                    <div class="portfolio-image">
+                        <img class="img-fluid" src="./img/MobOrbitX.png" alt="">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">MobOrbitX</h3>
+                        <p class="portfolio-description">
+                            A cutting-edge mobile advertising platform with advanced analytics and real-time tracking capabilities.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card animate-on-scroll">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <img class="img-fluid" src="./img/Ecommerce.png" alt="">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">E-commerce Platform</h3>
+                        <p class="portfolio-description">
+                            Modern e-commerce solution with seamless shopping experience, payment integration, and responsive design.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card animate-on-scroll">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <img class="img-fluid" src="./img/RummyCircle.png" alt="">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">RummyCircle</h3>
+                        <p class="portfolio-description">
+                            Interactive gaming platform with real-time multiplayer functionality and engaging user interface.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card animate-on-scroll">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                <img class="img-fluid" src="./img/FlyTravel.png" alt="">
+
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">FlyTravel</h3>
+                        <p class="portfolio-description">
+                            Travel booking platform with beautiful UI, flight search, and booking management system.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card animate-on-scroll">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);">
+                        <img class="img-fluid" src="./img/DrAppointment.png" alt="">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Doctor Appointment System</h3>
+                        <p class="portfolio-description">
+                            Healthcare management system for booking appointments, patient records, and doctor schedules.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card animate-on-scroll">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);">
+                        <img class="img-fluid" src="./img/Restaurant.png" alt="">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Restaurant Website</h3>
+                        <p class="portfolio-description">
+                            Elegant restaurant website with menu showcase, online reservations, and contact information.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Experience & Education</h2>
+            <div class="timeline">
+                <!-- Education Timeline -->
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2017</div>
+                        <h3 class="timeline-title">SSC (10th)</h3>
+                        <p class="timeline-company">Maharashtra State Board</p>
+                        <p>Completed SSC education under Maharashtra State Board in Hindi Medium from Mumbai Public High School.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2019</div>
+                        <h3 class="timeline-title">HSC (12th)</h3>
+                        <p class="timeline-company">Maharashtra State Board</p>
+                        <p>Completed HSC under Maharashtra State Board in Science stream from NES Ratnam Junior College of Arts, Science, and Commerce.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2022</div>
+                        <h3 class="timeline-title">Bachelor of Science (B.Sc IT)</h3>
+                        <p class="timeline-company">Mumbai University</p>
+                        <p>Completed Bachelor of Science degree in Information Technology from NES Ratnam College of Arts, Science, and Commerce.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2023</div>
+                        <h3 class="timeline-title">Python Development Course</h3>
+                        <p class="timeline-company">Quick Expert Infotech</p>
+                        <p>Completed a comprehensive 3-month Python Developer course from Quick Expert Infotech Institute, located in Thane, Mumbai.</p>
+                    </div>
+                </div>
+
+                <!-- Work Experience -->
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2023 (Feb - Apr)</div>
+                        <h3 class="timeline-title">Junior Django Developer</h3>
+                        <p class="timeline-company">Pentagon Tape Pvt Ltd</p>
+                        <p>Completed a 2-month internship as a Python Developer, working on Django-based web applications and gaining practical experience in backend development.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2023 - Present</div>
+                        <h3 class="timeline-title">Jr. Frontend Developer</h3>
+                        <p class="timeline-company">Mobavenue Media Pvt Ltd</p>
+                        <p>Currently working as a Frontend Developer, specializing in React.js development, creating responsive web applications, and implementing modern UI/UX designs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-form animate-on-scroll">
+                    <h3 style="font-size: 2rem; margin-bottom: 2rem; background: var(--accent-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Send Message</h3>
+                    <form>
+                        <div class="form-group">
+                            <label class="form-label" for="name">Your Name</label>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="email">Your Email</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-input" placeholder="Enter subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="message">Message</label>
+                            <textarea id="message" name="message" class="form-input form-textarea" placeholder="Enter your message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <div class="contact-item animate-on-scroll">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3 class="contact-title">Phone</h3>
+                        <div class="contact-details">
+                            +91 9137168732<br>
+                            Available Mon-Fri 9AM-6PM
+                        </div>
+                    </div>
+
+                    <div class="contact-item animate-on-scroll">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3 class="contact-title">Email</h3>
+                        <div class="contact-details">
+                            vykumar381@gmail.com<br>
+                            vy896958@gmail.com
+                        </div>
+                    </div>
+
+                    <div class="contact-item animate-on-scroll">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3 class="contact-title">Address</h3>
+                        <div class="contact-details">
+                            03 Yadav Niwas<br>
+                            Chaitanya Nagar, IIT Market<br>
+                            Powai, Mumbai-76
+                        </div>
+                    </div>
+
+                    <div class="contact-item animate-on-scroll">
+                        <div class="contact-icon">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                        <h3 class="contact-title">Follow Me</h3>
+                        <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 1rem;">
+                            <a href="#" style="color: var(--text-accent); font-size: 1.5rem; transition: var(--transition);">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" style="color: var(--text-accent); font-size: 1.5rem; transition: var(--transition);">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" style="color: var(--text-accent); font-size: 1.5rem; transition: var(--transition);">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: rgba(0, 0, 0, 0.5); padding: 2rem; text-align: center; border-top: 1px solid var(--glass-border);">
+        <p style="color: var(--text-secondary);">
+            Copyright © 2025 <span style="background: var(--primary-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">VijayKumar Yadav</span>. All Rights Reserved
+        </p>
+        <div style="margin-top: 1rem; display: flex; justify-content: center; gap: 1rem;">
+            <a href="#" style="color: var(--text-accent); font-size: 1.2rem; transition: var(--transition);">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" style="color: var(--text-accent); font-size: 1.2rem; transition: var(--transition);">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Functions
+        function toggleMobileMenu() {
+            const menu = document.querySelector('.offcanvas-menu');
+            const overlay = document.querySelector('.offcanvas-overlay');
+            const toggle = document.querySelector('.mobile-menu-toggle i');
+            
+            menu.classList.toggle('open');
+            overlay.classList.toggle('open');
+            
+            // Animate menu items
+            const menuItems = document.querySelectorAll('.offcanvas-nav-item');
+            menuItems.forEach((item, index) => {
+                if (menu.classList.contains('open')) {
+                    setTimeout(() => {
+                        item.classList.add('animate');
+                    }, index * 100);
+                } else {
+                    item.classList.remove('animate');
+                }
+            });
+            
+            // Toggle hamburger icon
+            if (menu.classList.contains('open')) {
+                toggle.classList.remove('fa-bars');
+                toggle.classList.add('fa-times');
+            } else {
+                toggle.classList.remove('fa-times');
+                toggle.classList.add('fa-bars');
+            }
+        }
+
+        // Typing Animation
+        const texts = ["Frontend Developer", "React.js Developer", "UI/UX Enthusiast", "Web Developer"];
+        let textIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const typedTextElement = document.getElementById('typed-text');
+
+        function typeText() {
+            const currentText = texts[textIndex];
+            
+            if (isDeleting) {
+                typedTextElement.textContent = currentText.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typedTextElement.textContent = currentText.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            let speed = isDeleting ? 50 : 100;
+
+            if (!isDeleting && charIndex === currentText.length) {
+                speed = 2000;
+                isDeleting = true;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                textIndex = (textIndex + 1) % texts.length;
+                speed = 500;
+            }
+
+            setTimeout(typeText, speed);
+        }
+
+        // Section Navigation
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // Show target section
+            const targetSection = document.getElementById(sectionId);
+            if (targetSection) {
+                targetSection.classList.add('active');
+            }
+            
+            // Update navigation (both desktop and mobile)
+            document.querySelectorAll('.nav-item, .offcanvas-nav-item').forEach(nav => {
+                nav.classList.remove('active');
+            });
+            
+            const activeNavs = document.querySelectorAll(`[data-section="${sectionId}"]`);
+            activeNavs.forEach(nav => {
+                nav.classList.add('active');
+            });
+            
+            // Close mobile menu after navigation
+            const menu = document.querySelector('.offcanvas-menu');
+            if (menu.classList.contains('open')) {
+                toggleMobileMenu();
+            }
+        }
+
+        // Navigation Event Listeners
+        document.querySelectorAll('.nav-item, .offcanvas-nav-item').forEach(navItem => {
+            navItem.addEventListener('click', (e) => {
+                e.preventDefault();
+                const sectionId = navItem.getAttribute('data-section');
+                showSection(sectionId);
+            });
+        });
+
+        // Smooth Button Navigation
+        document.querySelectorAll('a[href^="#"]').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href').substring(1);
+                if (targetId && document.getElementById(targetId)) {
+                    showSection(targetId);
+                }
+            });
+        });
+
+        // Scroll Animations
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.classList.add('animated');
+                }
+            });
+        }
+
+        // Form Submission
+        document.querySelector('form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(e.target);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const subject = formData.get('subject');
+            const message = formData.get('message');
+            
+            // Simple validation
+            if (!name || !email || !subject || !message) {
+                alert('Please fill in all fields');
+                return;
+            }
+            
+            // Show success message (in real app, you'd send this to a server)
+            alert('Thank you for your message! I will get back to you soon.');
+            e.target.reset();
+        });
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            typeText();
+            animateOnScroll();
+            
+            // Trigger scroll animation on scroll
+            window.addEventListener('scroll', animateOnScroll);
+            
+            // Add hover effects to cards
+            document.querySelectorAll('.skill-card, .portfolio-card, .contact-item').forEach(card => {
+                card.addEventListener('mouseenter', () => {
+                    card.style.transform = card.classList.contains('skill-card') 
+                        ? 'translateY(-10px) scale(1.05)' 
+                        : 'translateY(-10px)';
+                });
+                
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+            
+            // Add particle effect to background
+            createParticles();
+        });
+
+        // Particle System
+        function createParticles() {
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            
+            canvas.style.position = 'fixed';
+            canvas.style.top = '0';
+            canvas.style.left = '0';
+            canvas.style.width = '100%';
+            canvas.style.height = '100%';
+            canvas.style.pointerEvents = 'none';
+            canvas.style.zIndex = '-1';
+            canvas.style.opacity = '0.1';
+            
+            document.body.appendChild(canvas);
+            
+            function resizeCanvas() {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            }
+            
+            resizeCanvas();
+            window.addEventListener('resize', resizeCanvas);
+            
+            const particles = [];
+            const particleCount = 50;
+            
+            for (let i = 0; i < particleCount; i++) {
+                particles.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height,
+                    vx: (Math.random() - 0.5) * 0.5,
+                    vy: (Math.random() - 0.5) * 0.5,
+                    size: Math.random() * 2 + 1
+                });
+            }
+            
+            function animateParticles() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                
+                particles.forEach(particle => {
+                    particle.x += particle.vx;
+                    particle.y += particle.vy;
+                    
+                    if (particle.x < 0 || particle.x > canvas.width) particle.vx *= -1;
+                    if (particle.y < 0 || particle.y > canvas.height) particle.vy *= -1;
+                    
+                    ctx.beginPath();
+                    ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
+                    ctx.fillStyle = '#667eea';
+                    ctx.fill();
+                });
+                
+                requestAnimationFrame(animateParticles);
+            }
+            
+            animateParticles();
+        }
+
+        // Add smooth transitions for section changes
+        function addSectionTransitions() {
+            const style = document.createElement('style');
+            style.textContent = `
+                .section {
+                    transform: translateX(100px);
+                    opacity: 0;
+                    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+                }
+                .section.active {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+            `;
+            document.head.appendChild(style);
+        }
+        
+        addSectionTransitions();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
